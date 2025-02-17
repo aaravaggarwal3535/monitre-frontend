@@ -15,7 +15,7 @@ import Investment from "./Components/Pages/Investment.jsx";
 import Savings from "./Components/Pages/Savings.jsx";
 import NotFound from "./Components/Pages/notFound.jsx";
 import YourGoals from "./Components/Pages/YourGoals.jsx";
-import { SpeedInsights } from "@vercel/speed-insights/react";
+import { Analytics } from "@vercel/analytics/react";
 
 // Router setup
 const router = createBrowserRouter([
@@ -42,9 +42,8 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Provider store={store}>
-      <SpeedInsights>
-        <RouterProvider router={router} />
-      </SpeedInsights>
+      <RouterProvider router={router} />
+      <Analytics />
     </Provider>
   </React.StrictMode>
 );
