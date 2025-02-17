@@ -11,4 +11,14 @@ export default defineConfig({
       preventAssignment: true,
     }),
   ],
+  build: {
+    rollupOptions: {
+      output: {
+        manualChunks: {
+          vendor: ['react', 'react-dom', 'react-router-dom'],
+        },
+      },
+    },
+    chunkSizeWarningLimit: 1000, // Adjust the chunk size limit as needed
+  },
 });
