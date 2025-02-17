@@ -7,7 +7,6 @@ import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import Login from "./Components/Pages/Login.jsx";
 import Dashboard from "./Components/Pages/Dashboard.jsx";
 import Signup from "./Components/Pages/Signup.jsx";
-import ConfirmEmail from "./Components/Pages/ConfirmEmail.jsx";
 import PersonalDetails from "./Components/Pages/PersonalDetails.jsx";
 import { store } from "./redux/store.js";
 import { Provider } from "react-redux";
