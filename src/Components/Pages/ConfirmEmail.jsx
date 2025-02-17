@@ -1,5 +1,4 @@
 import { useEffect, useState } from "react";
-import { getAuth, isSignInWithEmailLink, signInWithEmailLink } from "firebase/auth";
 import { useNavigate } from "react-router-dom";
 
 const ConfirmEmail = () => {
