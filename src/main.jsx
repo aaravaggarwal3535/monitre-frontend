@@ -15,7 +15,6 @@ import PersonalDetailsSumbit from "./Components/Pages/PersonalDetailsSumbit.jsx"
 import Investment from "./Components/Pages/Investment.jsx";
 import Savings from "./Components/Pages/Savings.jsx";
 import NotFound from "./Components/Pages/notFound.jsx";
-// import ProtectedRoute from "./Components/ProtectedRoute.js";
 import YourGoals from "./Components/Pages/YourGoals.jsx";
 
 // Router setup
@@ -35,16 +34,6 @@ const router = createBrowserRouter([
       { path: "/investment", element: <Investment /> },
       { path: "/goals", element: <YourGoals /> },
       { path: "/savings", element: <Savings /> },
-
-      // ✅ Protect the Dashboard Route
-      // {
-      //   path: "/dashboard",
-      //   element: (
-      //     <ProtectedRoute>
-      //       <Dashboard />
-      //     </ProtectedRoute>
-      //   ),
-      // },
     ],
   },
   { path: "*", element: <NotFound /> },
