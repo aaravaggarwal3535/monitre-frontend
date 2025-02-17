@@ -26,7 +26,7 @@ import {
 } from "lucide-react";
 import Card from "../Card";
 
-const genAI = new GoogleGenerativeAI("AIzaSyC7958lvH9cC0y4E2qUV26o-0eBmDB1L70");
+const genAI = new GoogleGenerativeAI({ apiKey: process.env.GOOGLE_API });
 const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
 const Dashboard = () => {
