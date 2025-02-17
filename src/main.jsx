@@ -17,7 +17,6 @@ import Goals from "./Components/Pages/Goals.jsx";
 import Savings from "./Components/Pages/Savings.jsx";
 import NotFound from "./Components/Pages/notFound.jsx";
 // import ProtectedRoute from "./Components/ProtectedRoute.js";
-import YourGoals from "./Components/Pages/YourGoals.jsx";
 
 // Router setup
 const router = createBrowserRouter([
