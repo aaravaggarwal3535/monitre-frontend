@@ -1,14 +1,14 @@
 import { defineConfig } from 'vite';
 import tailwindcss from '@tailwindcss/vite';
-import stringReplace from 'vite-plugin-string-replace';
+import replace from '@rollup/plugin-replace';
 
 export default defineConfig({
   plugins: [
     tailwindcss(),
-    stringReplace({
-      replacements: [
-        { from: 'use client', to: '' },
-      ],
+    replace({
+      'use client': '',
+      delimiters: ['', ''],
+      preventAssignment: true,
     }),
   ],
 });
