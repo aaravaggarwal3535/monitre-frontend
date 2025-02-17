@@ -2,8 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import { Outlet } from 'react-router-dom';
 import Header from './Components/Header/Header';
-import { auth } from './firebase'; // Import auth from firebase
-import { onAuthStateChanged } from 'firebase/auth'; // To track auth state
 
 function App() {
   const [user, setUser] = useState(null);
